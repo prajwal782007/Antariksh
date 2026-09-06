@@ -17,6 +17,9 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Antariksh DPES Dashboard",
   description: "Space and Technology Club Mission Control",
+  icons: {
+    icon: "/logo.jpeg",
+  },
 };
 
 export default function RootLayout({

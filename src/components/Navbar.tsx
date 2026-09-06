@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
@@ -33,10 +34,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-full bg-accent/20 border border-accent/50 flex items-center justify-center">
-                {/* Fallback text if logo.png is not present */}
-                <span className="text-accent font-heading font-bold tracking-widest text-xl">A</span>
-              </div>
+              <Image src="/logo.jpeg" alt="Antariksh Logo" width={40} height={40} className="w-10 h-10 rounded-full object-cover" />
               <span className="font-heading font-bold text-xl tracking-widest uppercase">
                 Antariksh
               </span>
