@@ -203,6 +203,41 @@ export default function Projects() {
                   </div>
                 )}
 
+                {/* Previous Experimental Work (if any) */}
+                {selectedProject.details?.previousWork && (
+                  <div className="space-y-4 border-t border-white/10 pt-6">
+                    <h4 className="text-lg font-heading font-bold text-white flex items-center gap-2">
+                      <span className="w-1.5 h-4 bg-accent rounded-full" />
+                      Previous Experimental Test Campaign
+                    </h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {selectedProject.details.previousWork.overview}
+                    </p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      {selectedProject.details.previousWork.items.map((item, i) => (
+                        <div
+                          key={i}
+                          className={`p-4 rounded-xl border ${
+                            item.type === 'success'
+                              ? 'bg-emerald-500/10 border-emerald-500/30'
+                              : 'bg-amber-500/10 border-amber-500/30'
+                          } space-y-1.5`}
+                        >
+                          <div className="flex items-center gap-2">
+                            <span>{item.type === 'success' ? '⚡' : '⚠️'}</span>
+                            <span className="text-sm font-semibold text-white">
+                              {item.title}
+                            </span>
+                          </div>
+                          <p className="text-xs text-muted-foreground leading-relaxed">
+                            {item.desc}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
                 {/* Objectives & Learning Outcomes */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 border-t border-white/10 pt-6">
                   {selectedProject.details?.objectives && (
@@ -224,7 +259,7 @@ export default function Projects() {
                   {selectedProject.details?.learningOutcomes && (
                     <div className="space-y-3 bg-white/[0.02] border border-white/10 rounded-xl p-5">
                       <h4 className="text-base font-heading font-bold text-white flex items-center gap-2">
-                        <span className="text-accent text-lg">💡</span> Learning Outcomes
+                        <span className="text-accent text-lg">💡</span> Learning & Expected Outcomes
                       </h4>
                       <ul className="space-y-2">
                         {selectedProject.details.learningOutcomes.map((out, i) => (
@@ -237,6 +272,56 @@ export default function Projects() {
                     </div>
                   )}
                 </div>
+
+                {/* Testing Program Protocol (e.g. for Rocket Propulsion) */}
+                {selectedProject.details?.testingProgram && (
+                  <div className="space-y-4 border-t border-white/10 pt-6">
+                    <h4 className="text-lg font-heading font-bold text-white flex items-center gap-2">
+                      <span className="w-1.5 h-4 bg-accent rounded-full" />
+                      Testing Methodology & Program
+                    </h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {selectedProject.details.testingProgram.map((step, idx) => (
+                        <div
+                          key={idx}
+                          className="flex items-start gap-3 p-3 rounded-lg bg-white/[0.02] border border-white/10"
+                        >
+                          <span className="flex-shrink-0 w-6 h-6 rounded-full bg-accent/20 border border-accent/40 text-accent font-mono text-xs flex items-center justify-center font-bold">
+                            {idx + 1}
+                          </span>
+                          <span className="text-xs text-muted-foreground leading-relaxed">
+                            {step}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Long Term Vision / Pathway */}
+                {selectedProject.details?.longTermVision && (
+                  <div className="space-y-4 border-t border-white/10 pt-6">
+                    <h4 className="text-lg font-heading font-bold text-white flex items-center gap-2">
+                      <span className="w-1.5 h-4 bg-accent rounded-full" />
+                      Sounding Rocket Roadmap & Vision
+                    </h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {selectedProject.details.longTermVision.overview}
+                    </p>
+                    <div className="flex flex-wrap items-center gap-2 sm:gap-3 py-2">
+                      {selectedProject.details.longTermVision.pathway.map((step, idx) => (
+                        <div key={idx} className="flex items-center gap-2 sm:gap-3">
+                          <span className="px-3 py-1.5 bg-accent/10 border border-accent/30 rounded-lg text-xs font-mono text-accent font-medium">
+                            {step}
+                          </span>
+                          {idx < selectedProject.details!.longTermVision!.pathway.length - 1 && (
+                            <span className="text-white/40 text-sm">→</span>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 {/* Signal Path / Transmission Line */}
                 {selectedProject.details?.transmissionLine && (

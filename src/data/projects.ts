@@ -15,6 +15,16 @@ export interface ProjectDetails {
   };
   learningOutcomes?: string[];
   conclusion?: string;
+  // Generic rich sections for diverse projects
+  testingProgram?: string[];
+  longTermVision?: {
+    overview: string;
+    pathway: string[];
+  };
+  previousWork?: {
+    overview: string;
+    items: { title: string; desc: string; type: 'success' | 'warning' | 'info' }[];
+  };
 }
 
 export interface Project {
@@ -122,10 +132,84 @@ export const projects: Project[] = [
   {
     id: '4',
     title: 'Sugar Rocket',
-    description: 'Solid propellant rocket motor research and flight testing.',
+    description: 'Solid propellant rocket motor research, thrust measurement, and sounding rocket propulsion testing.',
     image: '/Sugar Rocket.jpeg',
     status: 'Completed',
     domain: 'Propulsion',
+    details: {
+      subtitle: 'Rocket Propulsion Testing & Experimental Analysis',
+      metadata: [
+        { label: 'Project Type', value: 'Rocketry Research & Testing' },
+        { label: 'Club', value: 'Antariksh Club' },
+        { label: 'College', value: 'Dhole Patil College of Engineering, Pune' },
+        { label: 'Proposed Budget', value: '₹1,000/-' },
+        { label: 'Campaign Tests', value: '4 Preliminary Runs' },
+        { label: 'Target Milestone', value: 'Student-built Sounding Rocket' },
+      ],
+      about:
+        'The Antariksh Club is working towards its long-term objective of designing and developing a student-built sounding rocket within the next two years. As an initial step towards this objective, the club has conducted preliminary experiments to understand basic rocket propulsion, ignition behaviour, motor casing behaviour, and combustion characteristics. The project focuses on moving from preliminary trial-based experimentation towards properly documented propulsion testing, thrust measurement, and experimental data analysis.',
+      previousWork: {
+        overview:
+          'During the initial experimental campaign, the team conducted four test runs, observing ignition characteristics, casing responses, and propellant behavior:',
+        items: [
+          {
+            title: '2 Partially Successful Tests',
+            desc: 'Observable combustion and thrust were obtained, establishing baseline ignition behavior and initial burn stability.',
+            type: 'success',
+          },
+          {
+            title: '2 Unsuccessful / Inconclusive Tests',
+            desc: 'Difficulties associated with experimental consistency, ignition/testing conditions, and small internal air pockets in propellant grain causing uneven burn.',
+            type: 'warning',
+          },
+        ],
+      },
+      objectives: [
+        'Study the basic performance characteristics of the experimental propulsion system.',
+        'Develop a systematic method for recording experimental observations.',
+        'Measure and analyse thrust during controlled ground testing.',
+        'Record test parameters such as mass, test duration, ignition response, and post-test condition.',
+        'Study the relationship between experimental observations and theoretical expectations.',
+        'Identify sources of inconsistency between different test runs.',
+        'Develop basic instrumentation and testing practices required for future rocketry projects.',
+        'Establish a foundation for the club’s long-term sounding-rocket development program.',
+      ],
+      testingProgram: [
+        'Controlled ground testing under faculty supervision.',
+        'Measurement of thrust using a suitable force-measurement arrangement.',
+        'Recording of motor/test-article mass before and after testing.',
+        'Recording of ignition and burn-duration observations.',
+        'Documentation of each test using a standardized test sheet.',
+        'Comparison of results between different test runs.',
+        'Analysis of thrust measurements and identification of performance inconsistencies.',
+        'Preparation of a test report containing experimental data, observations, conclusions, and recommendations.',
+      ],
+      learningOutcomes: [
+        'A basic thrust-testing capability.',
+        'Quantitative thrust measurements instead of visual estimation alone.',
+        'Standardized experimental test records.',
+        'Comparative data from multiple test runs.',
+        'Better understanding of experimental uncertainties and inconsistencies.',
+        'Initial propulsion-performance data to support future engineering analysis.',
+        'A foundation for developing avionics, telemetry, structural, aerodynamic, and propulsion subsystems.',
+      ],
+      longTermVision: {
+        overview:
+          'The activity is the beginning of a structured Rocketry Research and Testing Program within Antariksh Club. The long-term development roadmap is systematically planned as:',
+        pathway: [
+          'Research',
+          'Design',
+          'Simulation',
+          'Ground Testing',
+          'Data Analysis',
+          'Validation',
+          'Controlled Flight Testing',
+          'Sounding Rocket Development',
+        ],
+      },
+      conclusion:
+        'The four preliminary tests have provided the Antariksh Club with valuable practical experience and have demonstrated the need for a scientific, quantitative approach to rocketry experimentation. The proposed testing program moves the team from trial-and-error experimentation towards measurement-based engineering with thrust measurement, repeatability, documentation, and data analysis. Approval of the proposed ₹1,000 budget will establish the basic testing resources required for developing a student sounding rocket.',
+    },
   },
   {
     id: '5',

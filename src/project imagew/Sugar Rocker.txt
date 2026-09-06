@@ -1,0 +1,86 @@
+# Rocket Propulsion Testing & Experimental Analysis
+
+**Project Type:** Rocketry Research and Testing
+**Club:** Antariksh Club
+**College:** Dhole Patil College of Engineering, Pune
+**Proposed Budget:** ₹1,000/-
+
+## About the Project
+
+The Antariksh Club is working towards its long-term objective of designing and developing a student-built sounding rocket within the next two years.
+
+As an initial step towards this objective, the club has conducted preliminary experiments to understand basic rocket propulsion, ignition behaviour, motor casing behaviour, and combustion characteristics.
+
+During the initial experimental campaign, the team conducted four test runs, out of which two produced partially successful results. These experiments provided useful practical observations and highlighted the need for a more systematic and quantitative testing methodology.
+
+The project focuses on moving from preliminary trial-based experimentation towards properly documented propulsion testing, thrust measurement, and experimental data analysis.
+
+## Project Objectives
+
+* Study the basic performance characteristics of the experimental propulsion system.
+* Develop a systematic method for recording experimental observations.
+* Measure and analyse thrust during controlled ground testing.
+* Record test parameters such as mass, test duration, ignition response, and post-test condition.
+* Study the relationship between experimental observations and theoretical expectations.
+* Identify sources of inconsistency between different test runs.
+* Develop basic instrumentation and testing practices required for future rocketry projects.
+* Establish a foundation for the club’s long-term sounding-rocket development program.
+
+## Previous Experimental Work
+
+The Antariksh Club has already conducted four preliminary experimental test runs.
+
+**2 Partially Successful Tests:** Observable combustion and thrust were obtained, but the desired overall performance was not achieved.
+
+**2 Unsuccessful / Inconclusive Tests:** Primarily due to difficulties associated with experimental consistency and ignition/testing conditions.
+
+During the testing, the team observed variations in ignition behaviour and combustion performance. The experiments demonstrated that visual observation alone is insufficient for determining propulsion performance.
+
+The previous static-test report also identified inconsistencies in the propellant grain, including small internal air pockets, which were associated with uneven and inefficient burning.
+
+## Proposed Testing Approach
+
+The next phase will focus on measurement and analysis rather than repeated trial-and-error experimentation.
+
+The team proposes to develop a basic experimental test setup capable of recording thrust and relevant test parameters.
+
+The testing program will include:
+
+1. Controlled ground testing under faculty supervision.
+2. Measurement of thrust using a suitable force-measurement arrangement.
+3. Recording of motor/test-article mass before and after testing.
+4. Recording of ignition and burn-duration observations.
+5. Documentation of each test using a standardized test sheet.
+6. Comparison of results between different test runs.
+7. Analysis of thrust measurements and identification of performance inconsistencies.
+8. Preparation of a test report containing experimental data, observations, conclusions, and recommendations.
+
+## Expected Outcomes
+
+At the completion of this testing phase, the team expects to obtain:
+
+* A basic thrust-testing capability.
+* Quantitative thrust measurements instead of visual estimation alone.
+* Standardized experimental test records.
+* Comparative data from multiple test runs.
+* Better understanding of experimental uncertainties and inconsistencies.
+* Initial propulsion-performance data to support future engineering analysis.
+* A foundation for developing the avionics, telemetry, structural, aerodynamic, and propulsion subsystems required for the club’s future sounding-rocket project.
+
+## Long-Term Vision
+
+The proposed activity is not intended merely as a repeated trial of an experimental rocket motor. It is the beginning of a structured Rocketry Research and Testing Program within the Antariksh Club.
+
+The long-term development pathway is planned as:
+
+**Research → Design → Simulation → Ground Testing → Data Analysis → Validation → Controlled Flight Testing → Sounding Rocket Development**
+
+The knowledge and experimental infrastructure developed during this phase will subsequently support work on rocket avionics, telemetry, aerodynamic stability, recovery systems, structural design, and flight-data acquisition.
+
+## Project Outcome
+
+The four preliminary tests have provided the Antariksh Club with valuable practical experience and have demonstrated the need for a more scientific and quantitative approach to rocketry experimentation.
+
+The proposed testing program will allow the team to move from basic trial-and-error experimentation towards measurement-based engineering, with particular emphasis on thrust measurement, repeatability, documentation, and data analysis.
+
+Approval of the proposed ₹1,000 budget will enable the club to establish the basic testing resources required for the next stage of its long-term goal of developing a student sounding rocket.
