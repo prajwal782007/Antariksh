@@ -1,0 +1,91 @@
+# Helical Antenna Tuning & LEO Satellite Signal Reception Session
+
+**Date:** 18 July 2026
+**Venue:** Antariksh Club, Dhole Patil College of Engineering, Pune
+**Session Mentor:** Mr. Srinivas Nyayapathi Sir
+**Guided By:** Honourable Chairman Shri Sagar U. Dhole Patil Sir
+**Academic Year:** 2026–27
+**Duration:** More than 8 hours
+**Category:** Technical / Hands-on Learning Session
+
+## About the Event
+
+The Antariksh Club of Dhole Patil College of Engineering successfully conducted a Helical Antenna Tuning and LEO Satellite Signal Reception Session on 18th July 2026 under the expert guidance of Mr. Srinivas Nyayapathi Sir.
+
+The session provided students with practical exposure to antenna design, frequency tuning, RF signal reception, transmission lines, and satellite communication systems. After more than eight hours of continuous experimentation, tuning, and testing, the team successfully received a Low Earth Orbit (LEO) satellite signal at approximately 138.150 MHz.
+
+## Objectives
+
+* Understand the working principles of a helical antenna.
+* Learn frequency tuning and antenna resonance.
+* Study the factors affecting signal reception.
+* Understand the effect of copper wire cross-sectional area.
+* Study the importance of wire length and purity.
+* Understand the influence of the number and geometry of turns.
+* Gain practical experience in antenna tuning and testing.
+* Understand RF transmission lines and signal attenuation.
+* Learn methods to reduce signal losses.
+* Gain practical experience in receiving LEO satellite signals.
+
+## Session Proceedings
+
+Under the guidance of Mr. Srinivas Nyayapathi Sir, club members explored the physical and electrical parameters that influence the performance of a helical antenna.
+
+The students studied how the cross-sectional area, length, and purity of copper wire can affect the antenna’s electrical characteristics, resonant behaviour, and receiving performance.
+
+The session also focused on the number, spacing, and arrangement of turns in the helical antenna. Through practical experimentation, students observed how changes in these parameters affect frequency tuning and signal reception.
+
+## Transmission Line and Signal Attenuation
+
+The session introduced students to RF transmission line cables, including RG7-type coaxial cable, and their role in carrying weak received signals from the antenna to the receiver.
+
+Students learned about the importance of minimizing unnecessary attenuation and losses within the cable system. Practical considerations related to cable routing, winding, twisting, and folding were also demonstrated.
+
+The complete signal path was studied as:
+
+**Satellite Signal → Helical Antenna → Transmission Line → Receiver → Signal Analysis**
+
+## Antenna Measurement and Signal Analysis
+
+The practical work included testing and observing the antenna’s characteristics using RF measurement equipment, including a NanoVNA.
+
+Students observed the antenna’s response across different frequencies and learned the importance of tuning the antenna system towards the desired operating frequency.
+
+The received signals were also monitored and analyzed using a computer-based software setup, allowing participants to observe the RF spectrum and identify the characteristics of the received satellite transmission.
+
+## LEO Satellite Signal Reception
+
+Following continuous tuning, testing, and optimization of the receiving system, the team successfully received signals from a Low Earth Orbit (LEO) satellite.
+
+**Successful Reception Frequency: 138.150 MHz**
+
+The activity required more than eight hours of continuous practical work, including antenna adjustments, measurement, transmission line setup, signal monitoring, and repeated testing.
+
+## Learning Outcomes
+
+Through this session, participating students gained practical knowledge and experience in:
+
+* Helical antenna design and working principles.
+* Frequency tuning and antenna resonance.
+* Copper wire cross-sectional area and conductor length.
+* Copper purity and conductor quality.
+* Number and arrangement of antenna turns.
+* RF transmission lines and signal attenuation.
+* Practical antenna testing and tuning.
+* NanoVNA-based antenna measurement.
+* RF spectrum observation and signal analysis.
+* Practical reception of LEO satellite signals.
+
+## Major Achievement
+
+The major achievement of the session was the **successful reception of a LEO satellite signal at approximately 138.150 MHz** after more than eight hours of intensive hands-on experimentation and learning.
+
+The activity gave students practical exposure to the complete process of developing and optimizing a receiving system—from understanding antenna geometry and conductor properties to tuning the antenna, managing the transmission line, and observing the received satellite signal.
+
+## Conclusion
+
+The Helical Antenna Tuning and LEO Satellite Signal Reception Session was an important practical learning activity for the members of the Antariksh Club.
+
+Under the expert guidance of Mr. Srinivas Nyayapathi Sir, students gained direct experience with antenna construction, tuning, RF measurements, transmission lines, and real satellite signal reception.
+
+The session strengthened the practical knowledge of Antariksh Club members in RF engineering, antenna systems, signal reception, and satellite communication, representing another step towards building the club’s capabilities in space communication, RF systems, antenna technology, and satellite-based engineering projects.
