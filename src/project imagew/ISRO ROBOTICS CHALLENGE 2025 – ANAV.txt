@@ -1,0 +1,134 @@
+ISRO ROBOTICS CHALLENGE 2025 – ANAV PROJECT
+
+## PROJECT OVERVIEW
+
+Team Antariksh from Dhole Patil College of Engineering (DPCOE), Pune, participated in the ISRO Robotics Challenge 2025 in November 2025.
+
+The challenge focused on developing an autonomous aerial vehicle capable of navigating harsh, Mars-like terrains without GPS support. It provided students with an opportunity to work on aerospace design, embedded systems, robotics and autonomous control algorithms.
+
+Team Antariksh's project, ANAV (Autonomous Navigation Aerial Vehicle), was selected among the top 177 teams from more than 1,600 national entries during Phase I. Although the team did not progress beyond Phase II, the project provided practical experience in aerospace systems, autonomous robotics and multidisciplinary teamwork.
+
+## CHALLENGE OBJECTIVE
+
+The main objective was to develop an autonomous aerial vehicle capable of operating in environments where GPS-based navigation may not be available.
+
+The project was designed around scenarios involving limited communication and navigation, with potential applications in disaster management and extraterrestrial exploration.
+
+The competition followed a structured process involving:
+
+* Technical proposal
+* Prototype development
+* Demonstration
+* Technical documentation
+* Hardware demonstration
+* Safety and emergency protocol validation
+
+## ANAV – AUTONOMOUS NAVIGATION AERIAL VEHICLE
+
+ANAV was the aerial vehicle developed by Team Antariksh for the challenge.
+
+The system combined a flight controller, onboard computing, sensors, propulsion hardware and wireless telemetry to support autonomous flight and real-time monitoring.
+
+## HARDWARE ARCHITECTURE
+
+The ANAV system included:
+
+* Pixhawk 2.4.8 Flight Controller
+* Raspberry Pi 5 with 8 GB RAM
+* IMU for orientation measurement
+* TF Luna LiDAR for altitude measurement
+* Cameras for terrain capture
+* 4 × A2212 BLDC motors
+* 1045 propellers
+* Electronic Speed Controllers (ESCs)
+* 3S 3300 mAh LiPo battery
+* Wi-Fi-based MQTT telemetry
+
+The Raspberry Pi served as the onboard processing unit, while the Pixhawk flight controller handled flight-control functions.
+
+## SOFTWARE ARCHITECTURE
+
+The onboard computing system used Raspberry Pi OS with Python and C++.
+
+The software stack included:
+
+* DroneKit
+* MAVLink
+* MAVProxy
+* Paho MQTT
+
+A multithreaded software architecture was used to support real-time sensor processing and decision-making.
+
+PID control loops were used for orientation and altitude control. The system also included emergency routines designed to respond to communication and sensor failures.
+
+## MISSION SEQUENCE
+
+The ANAV demonstration consisted of several stages:
+
+1. BOOT & INITIALIZATION
+
+The system performed sensor calibration and safety checks before flight.
+
+2. TAKE-OFF
+
+The vehicle performed a controlled thrust increase while using IMU and LiDAR feedback.
+
+3. HOVER
+
+ANAV successfully maintained a stable flight at an altitude of 5 metres for 46 seconds while streaming live telemetry.
+
+4. LANDING
+
+The vehicle performed a controlled descent using LiDAR and IMU data, followed by automatic disarming after ground contact.
+
+5. FAIL-SAFE OPERATION
+
+The system incorporated multiple safety mechanisms:
+
+* Automatic landing after 5 seconds of communication loss
+* Sensor-failure fallback with safe landing
+* Manual override through RC mode
+
+## KEY HIGHLIGHTS
+
+NATIONAL RECOGNITION
+
+Team Antariksh was selected among the top 177 teams in Round I from more than 1,600 national entries.
+
+TECHNICAL DEVELOPMENT
+
+The first-year student team independently developed and integrated the UAV hardware and software architecture, gaining practical experience in embedded systems and autonomous robotics.
+
+LIVE DEMONSTRATION
+
+The team successfully demonstrated:
+
+* Take-off
+* Stable hovering
+* Live telemetry streaming
+* Controlled landing
+
+FAIL-SAFE SYSTEMS
+
+Communication-loss and sensor-failure protocols were integrated into the system to support safer operation during the demonstration.
+
+## LEARNING & ENGINEERING EXPOSURE
+
+The project provided practical exposure to:
+
+* Aerospace engineering
+* UAV design
+* Embedded systems
+* Flight control
+* Sensor integration
+* Telemetry
+* Autonomous robotics
+* Team-based engineering development
+
+The experience strengthened the team's understanding of autonomous systems, drone design, embedded programming and space technology.
+
+## PROJECT OUTCOME
+
+Although Team Antariksh did not progress beyond Phase II, the project was recognized for innovation, documentation and teamwork at the national level.
+
+The ANAV project became an important hands-on learning experience for the team and encouraged further exploration of aerospace robotics, autonomous systems and space technology.

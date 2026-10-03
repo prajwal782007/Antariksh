@@ -2,52 +2,62 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="bg-background border-t border-white/10 py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-full bg-accent/20 border border-accent/50 flex items-center justify-center">
-                <span className="text-accent font-heading font-bold tracking-widest text-sm">A</span>
+    <footer className="px-3 sm:px-6 pb-8 bg-black">
+      <div className="max-w-7xl mx-auto bg-[#111116] border border-white/15 rounded-[36px] sm:rounded-[48px] p-8 sm:p-12 md:p-14">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-8 border-b border-white/10">
+          <div className="md:col-span-5">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-full bg-[#FF5500] text-black font-display font-black text-xl flex items-center justify-center">
+                A
               </div>
-              <span className="font-heading font-bold text-lg tracking-widest uppercase">
-                Antariksh
+              <span
+                className="font-display font-black text-2xl tracking-wider uppercase text-white"
+                style={{ fontFamily: 'var(--font-anton), Impact, sans-serif' }}
+              >
+                ANTARIKSH DPES
               </span>
             </div>
-            <p className="text-muted-foreground text-sm">
-              The official Space and Technology Club of DPES. Dedicated to pushing the boundaries of aerospace engineering and exploration.
+            <p className="text-white/70 text-sm max-w-sm leading-relaxed font-medium">
+              The official Space & Technology Club of Dhole Patil College of Engineering, Pune. Dedicated to rocketry, satellites, and space exploration.
             </p>
           </div>
           
-          <div>
-            <h3 className="font-heading font-semibold text-white mb-4 tracking-wider uppercase text-sm">Quick Links</h3>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="#missions" className="hover:text-accent transition-colors">Missions</Link></li>
-              <li><Link href="#projects" className="hover:text-accent transition-colors">Projects</Link></li>
-              <li><Link href="#events" className="hover:text-accent transition-colors">Events</Link></li>
-              <li><Link href="#domains" className="hover:text-accent transition-colors">Domains</Link></li>
+          <div className="md:col-span-3">
+            <h3 className="font-mono font-bold text-xs text-[#FF5500] uppercase tracking-widest mb-4">
+              QUICK ACCESS
+            </h3>
+            <ul className="space-y-2.5 text-sm font-mono font-semibold">
+              <li><Link href="#missions" className="text-white/70 hover:text-[#FF5500] transition-colors">01 // MISSIONS</Link></li>
+              <li><Link href="#projects" className="text-white/70 hover:text-[#FF5500] transition-colors">02 // PROJECTS</Link></li>
+              <li><Link href="#achievements" className="text-white/70 hover:text-[#FF5500] transition-colors">03 // HALL OF FAME</Link></li>
+              <li><Link href="#events" className="text-white/70 hover:text-[#FF5500] transition-colors">04 // EVENTS</Link></li>
+              <li><Link href="#domains" className="text-white/70 hover:text-[#FF5500] transition-colors">05 // DOMAINS</Link></li>
             </ul>
           </div>
 
-          <div>
-            <h3 className="font-heading font-semibold text-white mb-4 tracking-wider uppercase text-sm">Contact</h3>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Email: <a href="mailto:contact@antariksh.club" className="hover:text-accent transition-colors">contact@antariksh.club</a></li>
-              <li>Location: DPES Campus</li>
-            </ul>
-            <div className="flex space-x-4 mt-6">
-              {/* Placeholder for social links */}
-              <a href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent/20 hover:text-accent transition-colors">IN</a>
-              <a href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent/20 hover:text-accent transition-colors">LI</a>
-              <a href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent/20 hover:text-accent transition-colors">TW</a>
+          <div className="md:col-span-4">
+            <h3 className="font-mono font-bold text-xs text-[#FF5500] uppercase tracking-widest mb-4">
+              HEADQUARTERS
+            </h3>
+            <p className="text-sm font-mono text-white/70 leading-relaxed mb-4">
+              Antariksh Mission Control, Dhole Patil College of Engineering, 1284 Near Kharadi IT Park, Wagholi, Pune, Maharashtra 412207
+            </p>
+            <div className="flex space-x-3">
+              <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-xs font-mono font-bold text-white hover:bg-[#FF5500] hover:text-black hover:border-[#FF5500] transition-colors">IG</a>
+              <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-xs font-mono font-bold text-white hover:bg-[#FF5500] hover:text-black hover:border-[#FF5500] transition-colors">LI</a>
+              <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-xs font-mono font-bold text-white hover:bg-[#FF5500] hover:text-black hover:border-[#FF5500] transition-colors">X</a>
             </div>
           </div>
         </div>
         
-        <div className="mt-12 pt-8 border-t border-white/5 text-center">
-          <p className="text-xs text-muted-foreground uppercase tracking-widest">
-            &copy; {new Date().getFullYear()} Antariksh DPES. All rights reserved.
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs text-white/50 font-semibold">
+          <p className="uppercase tracking-wider">
+            &copy; {new Date().getFullYear()} ANTARIKSH DPES CLUB. ALL SYSTEMS NOMINAL.
           </p>
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-[#FF5500] animate-pulse" />
+            <span className="text-white/80">COMMUNICATION LINK ACTIVE</span>
+          </div>
         </div>
       </div>
     </footer>

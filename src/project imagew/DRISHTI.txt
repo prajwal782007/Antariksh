@@ -1,0 +1,127 @@
+DRISHTI – AI-Powered Disaster Response Drone
+Project Overview
+
+DRISHTI is an AI-powered autonomous disaster-response drone designed to assist search-and-rescue operations in disaster-affected and difficult-to-access areas.
+
+The system uses aerial surveillance and AI-based computer vision to identify potential victims, animals, fire, smoke, flood/water, debris, damaged structures and other hazards. It then provides their locations and relevant information to rescue teams.
+
+DRISHTI is designed for disasters such as floods, earthquakes, fires, structural collapses and landslides.
+
+System Architecture & Operational Workflow
+
+[ Disaster-Affected Area ]
+↓
+[ Mission Planning ]
+↓
+[ Grid/Lawnmower Search Pattern ]
+↓
+[ Autonomous Drone ]
+↓
+[ Aerial Image Capture ]
+↓
+[ AI / YOLO-Based Detection ]
+↓
+[ Victim & Hazard Identification ]
+↓
+[ Geo-Tagging ]
+↓
+[ Priority Classification ]
+↓
+[ Safer Route Guidance ]
+↓
+[ Rescue Team ]
+
+The system follows a Search → Detect → Locate → Prioritize → Guide → Rescue workflow.
+
+1. Mission Planning & Autonomous Search
+
+The rescue operator first selects the disaster-affected region to be surveyed. DRISHTI uses a grid/lawnmower search pattern to systematically cover the selected area.
+
+The drone supports both:
+
+Autonomous flight mode for predefined missions.
+Manual flight mode for direct operator control when required.
+
+The systematic search approach helps reduce unnecessary movement while providing organized coverage of the affected region.
+
+2. AI-Based Detection
+
+During flight, the drone captures images of the disaster area. These images are processed through an AI-based computer-vision pipeline using YOLO-based object detection.
+
+The system is designed to identify:
+
+People / potential victims
+Animals
+Fire
+Smoke
+Flood/water
+Debris
+Damaged structures
+Other hazardous conditions
+
+Multiple objects can be detected simultaneously, with each detection associated with a confidence score.
+
+3. Geo-Tagging & Information Generation
+
+When an important object or hazard is detected, DRISHTI associates the detection with its geographical position.
+
+The system records information such as:
+
+Detected object
+Location
+Image/frame
+Timestamp
+
+This allows rescue teams to focus on specific detected locations rather than manually searching the entire disaster area.
+
+4. Intelligent Prioritization
+
+DRISHTI evaluates detected situations using factors such as:
+
+Number of victims
+Severity
+Hazard risk
+Accessibility
+
+Based on these factors, detected locations can be categorized into:
+
+Urgent → High → Low
+
+This helps organize the available rescue resources and identify situations requiring greater attention.
+
+5. Safer Route Guidance
+
+After detecting and geo-tagging victims and hazards, DRISHTI uses the collected geographical information to support safer route planning for rescue teams.
+
+Information about hazards such as flooded areas, fire, debris and damaged structures can help responders understand dangerous regions while approaching detected locations.
+
+Key Features
+Feature	Description
+Autonomous Search	Grid/lawnmower area coverage
+AI Detection	YOLO-based computer vision
+Victim Detection	Identifies potential people requiring rescue
+Hazard Detection	Fire, smoke, water, debris, damaged structures
+Geo-Tagging	Records geographical location of detections
+Data Recording	Image/frame and timestamp
+Prioritization	Urgent, High and Low
+Route Guidance	Supports safer rescue approach
+Flight Modes	Autonomous and manual
+Simple Block Diagram
+
+Drone Camera
+↓
+AI / YOLO Detection
+↓
+Victim & Hazard Identification
+↓
+Geo-Tagging
+↓
+Priority Classification
+↓
+Route Guidance
+↓
+Rescue Team
+
+One-Line Project Description
+
+DRISHTI is an AI-powered disaster-response drone that uses autonomous aerial search, YOLO-based detection, geo-tagging and intelligent prioritization to help rescue teams locate victims, identify hazards and plan safer rescue operations.

@@ -1,0 +1,131 @@
+V-Dipole Antenna – Satellite Image Reception System
+Project Overview
+
+The V-Dipole Antenna is a student-designed ground-station antenna developed by Antariksh Club, Dhole Patil College of Engineering, Pune, for receiving radio transmissions from Low Earth Orbit (LEO) weather satellites.
+
+The antenna was specifically designed and tuned around the 137 MHz VHF frequency range, enabling reception of real-time weather imagery transmitted by satellites such as METEOR-M2-3.
+
+The system provides a practical orbit-to-ground communication link, allowing students to directly receive satellite signals and process them into usable Earth-observation imagery.
+
+System Architecture & Operational Workflow
+
+[ METEOR-M2-3 Weather Satellite ]
+↓
+137 MHz VHF Radio Transmission
+↓
+[ Student-Designed V-Dipole Antenna ]
+↓
+[ SDR – Software Defined Radio ]
+↓
+Signal Recording @ 137.900 MHz
+↓
+[ SatDump ]
+↓
+Decoded Satellite Weather Image
+
+The system operates through three primary stages:
+
+1. Satellite Signal Transmission
+
+The METEOR-M2-3 weather satellite transmits meteorological Earth-observation data using a radio downlink in the 137 MHz VHF band.
+
+2. Ground Signal Reception
+
+A student-designed 137 MHz V-Dipole antenna, installed on the rooftop of Dhole Patil College of Engineering, receives the satellite's radio signal during its visible pass over the ground station.
+
+The V-Dipole provides a simple and practical antenna configuration suitable for VHF satellite reception.
+
+3. SDR Reception & Image Decoding
+
+The received RF signal is captured using an SDR (Software Defined Radio).
+
+The signal was recorded at approximately 137.900 MHz and subsequently processed using SatDump, which demodulates and decodes the received satellite transmission into weather imagery.
+
+Major Components
+1. V-Dipole Antenna
+Student-designed and constructed antenna.
+Tuned for approximately 137 MHz.
+Installed on the rooftop of Dhole Patil College of Engineering, Pune.
+Used as the primary RF receiving element.
+Designed for receiving VHF transmissions from passing weather satellites.
+2. Software Defined Radio (SDR)
+
+The SDR acts as the RF receiver between the antenna and the computer.
+
+It:
+
+Receives the VHF signal from the antenna.
+Tunes to the satellite transmission frequency.
+Digitizes the received RF signal.
+Allows the signal to be recorded for further processing.
+Provides a software-controlled alternative to conventional dedicated radio receivers.
+3. SatDump
+
+SatDump is used for processing and decoding the captured satellite signal.
+
+The processing chain is essentially:
+
+RF Signal → SDR → Digital Signal → SatDump → Decoded Image
+
+First Successful Satellite Image Reception
+
+According to your presentation:
+
+Date: 27 November 2025
+Venue: Dhole Patil College of Engineering, Pune
+Organization: Antariksh Club
+
+Antariksh Club successfully received real-time weather imagery transmitted by the METEOR-M2-3 Low Earth Orbit weather satellite.
+
+This was described in your presentation as the first orbit-to-ground satellite image reception in the institution's history.
+
+Reception Details
+Parameter	Details
+Satellite	METEOR-M2-3
+Satellite Type	Meteorological / Earth Observation
+Orbit	Low Earth Orbit (LEO)
+Frequency Band	137 MHz VHF
+Reception Frequency	137.900 MHz
+Antenna	Student-designed V-Dipole
+Receiver	Software Defined Radio (SDR)
+Decoder	SatDump
+Ground Station	Dhole Patil College of Engineering, Pune
+Date	27 November 2025
+Operational Ground Station
+
+The presentation also states that this V-Dipole system became the second operational ground station of Antariksh Club, alongside the club's existing UHF station.
+
+The club was also working toward developing a geostationary satellite receiving station.
+
+This demonstrates a progression from receiving different types of satellite transmissions toward developing a more capable student-operated ground-station infrastructure.
+
+Future Development
+
+The V-Dipole ground station can be further developed by adding:
+
+Automated satellite pass prediction.
+Antenna tracking/rotator systems.
+Improved RF filtering and low-noise amplification.
+Automated SDR recording.
+Automatic SatDump processing.
+Satellite pass logging.
+Web-based reception monitoring.
+Integration with the Antariksh Club's ground-station dashboard.
+Additional satellite reception capabilities.
+Simple Block Diagram
+
+METEOR-M2-3
+↓
+137 MHz VHF Downlink
+↓
+V-Dipole Antenna
+↓
+SDR Receiver
+↓
+137.900 MHz Signal Recording
+↓
+SatDump Processing
+↓
+Weather Image
+↓
+Ground Station / Observatory Dashboard

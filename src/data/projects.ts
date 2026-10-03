@@ -45,14 +45,88 @@ export const projects: Project[] = [
     image: '/Cubesat.jpeg',
     status: 'Completed',
     domain: 'Aerospace',
+    details: {
+      subtitle: 'CubeSat-Enabled Disaster Early Warning & Telemetry Network',
+      metadata: [
+        { label: 'Project Type', value: 'Distributed Monitoring System' },
+        { label: 'Core Application', value: 'Disaster Early Warning & Telemetry' },
+        { label: 'Communication Base', value: 'CubeSat Architecture' },
+      ],
+      about: 'The CubeSat-Enabled Disaster Early Warning & Telemetry Network is a distributed monitoring system designed to collect environmental and disaster-related data from rural and urban sensor stations and relay telemetry through a CubeSat-based communication architecture. The system is designed to provide an alternative communication pathway when conventional terrestrial networks become unavailable or unreliable during disasters such as floods, earthquakes, and landslides.',
+      proceedings: [
+        'Rural Monitoring Station monitors water levels, seismic/vibration activity, soil moisture, temperature, and humidity.',
+        'Urban Telemetry Station monitors air quality, gas concentrations, temperature, humidity, and microclimate conditions.',
+        'CubeSat Flight Hub acts as the central telemetry platform for receiving data, monitoring spacecraft sensors, recording mission data, and maintaining timestamps.',
+        'Current prototype uses 2.4 GHz wireless communication for local testing, with plans to investigate sub-GHz LoRa communication for longer-range telemetry.'
+      ],
+      achievement: {
+        highlight: 'CubeSat-based telemetry architecture',
+        details: 'The project demonstrates how distributed environmental sensors, edge processing, wireless telemetry and CubeSat-based communication can be combined to support disaster monitoring and early-warning applications.'
+      },
+      longTermVision: {
+        overview: 'The project roadmap includes a transition from modular commercial hardware toward compact, integrated spacecraft electronics. Future development may include:',
+        pathway: [
+          'Custom PCBs',
+          'Rigid-flex and high-density interconnects',
+          'Reduced wiring and connectors',
+          'Radiation-tolerant processors or FPGAs',
+          'Hardware-accelerated processing',
+          'Custom ASIC/SoC architectures',
+          'Flight-oriented hardware qualification'
+        ]
+      }
+    }
   },
   {
     id: '2',
     title: 'Rover',
-    description: 'A two-stage sounding rocket for atmospheric research.',
+    description: 'An Autonomous Lunar Surface 3D-Mapping Rover developed for NSIC 2026.',
     image: '/Rover.jpeg',
-    status: 'In Progress',
-    domain: 'Propulsion',
+    status: 'Completed',
+    domain: 'Space Robotics',
+    details: {
+      subtitle: 'Autonomous Lunar Surface 3D-Mapping Rover',
+      metadata: [
+        { label: 'Project Type', value: 'Space Robotics / Autonomous Rover' },
+        { label: 'Event', value: 'National Space Innovation Challenge (NSIC) 2026' },
+        { label: 'Team', value: 'AgYanis' },
+        { label: 'Computing Platform', value: 'Raspberry Pi 5' },
+      ],
+      about:
+        'The AgYanis team from the Antariksh Club developed an Autonomous Lunar Surface 3D-Mapping Rover for exploring and analysing a simulated lunar surface containing craters, uneven terrain, and obstacles. The project was developed as part of the National Space Innovation Challenge (NSIC) 2026 and integrates stereo vision, LiDAR, autonomous navigation, and hazard detection.',
+      proceedings: [
+        'The rover uses two Raspberry Pi Camera Module 3 cameras for stereo vision, allowing it to estimate depth and generate a 3D representation of the terrain.',
+        'A TF-Luna LiDAR provides an independent distance measurement used for calibration and additional safety monitoring.',
+        'In Manual Mode, the operator controls the rover while the system provides continuous sensor information and hazard warnings.',
+        'In Autonomous Mode, the rover analyses depth information to identify hazardous regions and attempts to navigate safer paths automatically.',
+        'The physical development involved collaboration with the DPCOE Graphics Design Club, who assisted in 3D printing the complete rover chassis.',
+      ],
+      achievement: {
+        highlight: 'Top 5 Projects at NSIC 2026',
+        details:
+          'The AgYanis Hardware Team successfully secured a position among the Top 5 Projects at the National Space Innovation Challenge (NSIC) 2026. During evaluation, a former ISRO scientist appreciated the interdisciplinary approach and encouraged further research on the stereo-vision approach and hazard-response system.',
+      },
+      learningOutcomes: [
+        'Integration of stereo vision using dual cameras.',
+        'Depth estimation and 3D terrain representation.',
+        'LiDAR integration for distance calibration and safety detection.',
+        'Autonomous navigation and hazard detection.',
+        'Odometry using an encoder-based four-wheel-drive system.',
+        'Software development using Python and C++.',
+      ],
+      longTermVision: {
+        overview:
+          'The Antariksh Club plans to pursue research based on the project, focusing on "Stereo-based 3D planetary perception and hazard-aware autonomous navigation." The rover can be further improved through:',
+        pathway: [
+          'Better stereo calibration',
+          'LiDAR-camera fusion',
+          'Terrain classification',
+          'Improved hazard detection',
+          'Autonomous path planning',
+          'More accurate 3D mapping',
+        ],
+      },
+    },
   },
   {
     id: '3',
@@ -218,5 +292,143 @@ export const projects: Project[] = [
     image: '/V Dipole Antenna.jpeg',
     status: 'Completed',
     domain: 'Electronics',
+    details: {
+      subtitle: 'V-Dipole Antenna – Satellite Image Reception System',
+      metadata: [
+        { label: 'Project Type', value: 'Ground-Station Antenna' },
+        { label: 'Satellite', value: 'METEOR-M2-3' },
+        { label: 'Frequency Band', value: '137 MHz VHF' },
+        { label: 'Date', value: '27 November 2025' },
+        { label: 'Venue', value: 'Dhole Patil College of Engineering, Pune' },
+      ],
+      about: 'The V-Dipole Antenna is a student-designed ground-station antenna developed by Antariksh Club, Dhole Patil College of Engineering, Pune, for receiving radio transmissions from Low Earth Orbit (LEO) weather satellites. The antenna was specifically designed and tuned around the 137 MHz VHF frequency range, enabling reception of real-time weather imagery transmitted by satellites such as METEOR-M2-3. It provides a practical orbit-to-ground communication link, allowing students to directly receive satellite signals and process them into usable Earth-observation imagery.',
+      proceedings: [
+        'The METEOR-M2-3 weather satellite transmits meteorological Earth-observation data using a radio downlink in the 137 MHz VHF band.',
+        'A student-designed 137 MHz V-Dipole antenna, installed on the rooftop, receives the satellite\'s radio signal during its visible pass.',
+        'The received RF signal is captured using an SDR (Software Defined Radio).',
+        'The signal is recorded at approximately 137.900 MHz and subsequently processed using SatDump, which demodulates and decodes the transmission into weather imagery.'
+      ],
+      transmissionLine: {
+        overview: 'The system operates as an integrated ground station to receive and process satellite signals.',
+        signalPath: [
+          'METEOR-M2-3',
+          '137 MHz VHF Downlink',
+          'V-Dipole Antenna',
+          'SDR Receiver',
+          '137.900 MHz Signal Recording',
+          'SatDump Processing',
+          'Weather Image'
+        ]
+      },
+      achievement: {
+        highlight: 'First Successful Satellite Image Reception',
+        details: 'On 27 November 2025, Antariksh Club successfully received real-time weather imagery transmitted by the METEOR-M2-3 Low Earth Orbit weather satellite. This marked the first orbit-to-ground satellite image reception in the institution\'s history. This V-Dipole system became the second operational ground station of Antariksh Club.'
+      },
+      longTermVision: {
+        overview: 'The V-Dipole ground station can be further developed by adding:',
+        pathway: [
+          'Automated satellite pass prediction',
+          'Antenna tracking/rotator systems',
+          'Improved RF filtering and low-noise amplification',
+          'Automated SDR recording and SatDump processing',
+          'Web-based reception monitoring'
+        ]
+      }
+    }
   },
+  {
+    id: '6',
+    title: 'DRISHTI',
+    description: 'AI-powered disaster-response drone that uses autonomous aerial search, YOLO-based detection, geo-tagging and intelligent prioritization to help rescue teams locate victims, identify hazards and plan safer rescue operations.',
+    image: '/Drishti.jpeg',
+    status: 'In Progress',
+    domain: 'Robotics & AI',
+    details: {
+      subtitle: 'AI-Powered Disaster Response Drone',
+      metadata: [
+        { label: 'Project Type', value: 'Autonomous Drone' },
+        { label: 'Core Application', value: 'Disaster Response & Search-and-Rescue' },
+        { label: 'Key Technology', value: 'AI Computer Vision & Geo-Tagging' },
+      ],
+      about: 'DRISHTI is an AI-powered autonomous disaster-response drone designed to assist search-and-rescue operations in disaster-affected and difficult-to-access areas. The system uses aerial surveillance and AI-based computer vision to identify potential victims, animals, fire, smoke, flood/water, debris, damaged structures and other hazards. It then provides their locations and relevant information to rescue teams. DRISHTI is designed for disasters such as floods, earthquakes, fires, structural collapses and landslides.',
+      objectives: [
+        'Search → Detect → Locate → Prioritize → Guide → Rescue'
+      ],
+      proceedings: [
+        '1. Mission Planning & Autonomous Search: The rescue operator first selects the disaster-affected region to be surveyed. DRISHTI uses a grid/lawnmower search pattern to systematically cover the selected area. The drone supports both Autonomous flight mode for predefined missions and Manual flight mode for direct operator control when required. The systematic search approach helps reduce unnecessary movement while providing organized coverage of the affected region.',
+        '2. AI-Based Detection: During flight, the drone captures images of the disaster area. These images are processed through an AI-based computer-vision pipeline using YOLO-based object detection. The system is designed to identify: People/potential victims, Animals, Fire, Smoke, Flood/water, Debris, Damaged structures, and Other hazardous conditions. Multiple objects can be detected simultaneously, with each detection associated with a confidence score.',
+        '3. Geo-Tagging & Information Generation: When an important object or hazard is detected, DRISHTI associates the detection with its geographical position. The system records information such as: Detected object, Location, Image/frame, and Timestamp. This allows rescue teams to focus on specific detected locations rather than manually searching the entire disaster area.',
+        '4. Intelligent Prioritization: DRISHTI evaluates detected situations using factors such as: Number of victims, Severity, Hazard risk, and Accessibility. Based on these factors, detected locations can be categorized into Urgent → High → Low. This helps organize the available rescue resources and identify situations requiring greater attention.',
+        '5. Safer Route Guidance: After detecting and geo-tagging victims and hazards, DRISHTI uses the collected geographical information to support safer route planning for rescue teams. Information about hazards such as flooded areas, fire, debris and damaged structures can help responders understand dangerous regions while approaching detected locations.'
+      ],
+      testingProgram: [
+        'Key Features:',
+        'Autonomous Search: Grid/lawnmower area coverage',
+        'AI Detection: YOLO-based computer vision',
+        'Victim Detection: Identifies potential people requiring rescue',
+        'Hazard Detection: Fire, smoke, water, debris, damaged structures',
+        'Geo-Tagging: Records geographical location of detections',
+        'Data Recording: Image/frame and timestamp',
+        'Prioritization: Urgent, High and Low',
+        'Route Guidance: Supports safer rescue approach',
+        'Flight Modes: Autonomous and manual'
+      ],
+      longTermVision: {
+        overview: 'System Architecture & Operational Workflow Block Diagram:',
+        pathway: [
+          'Drone Camera',
+          'AI / YOLO Detection',
+          'Victim & Hazard Identification',
+          'Geo-Tagging',
+          'Priority Classification',
+          'Route Guidance',
+          'Rescue Team'
+        ]
+      }
+    }
+  },
+  {
+    id: '7',
+    title: 'ISRO Robotics Challenge',
+    description: 'Participation in the ISRO Robotics Challenge 2025 with the ANAV project.',
+    image: '/isro challenge.jpeg',
+    status: 'Completed',
+    domain: 'Space Robotics',
+    details: {
+      subtitle: 'ANAV – Autonomous Navigation Aerial Vehicle',
+      metadata: [
+        { label: 'Event', value: 'ISRO Robotics Challenge 2025' },
+        { label: 'Team', value: 'Antariksh' },
+        { label: 'Institution', value: 'Dhole Patil College of Engineering, Pune' },
+      ],
+      about: 'Team Antariksh from Dhole Patil College of Engineering (DPCOE), Pune, participated in the ISRO Robotics Challenge 2025 in November 2025. The challenge focused on developing an autonomous aerial vehicle capable of navigating harsh, Mars-like terrains without GPS support. It provided students with an opportunity to work on aerospace design, embedded systems, robotics and autonomous control algorithms. Team Antariksh\'s project, ANAV (Autonomous Navigation Aerial Vehicle), was selected among the top 177 teams from more than 1,600 national entries during Phase I. Although the team did not progress beyond Phase II, the project provided practical experience in aerospace systems, autonomous robotics and multidisciplinary teamwork.',
+      objectives: [
+        'Develop an autonomous aerial vehicle capable of operating in environments where GPS-based navigation may not be available.',
+        'Design for scenarios involving limited communication and navigation, with potential applications in disaster management and extraterrestrial exploration.',
+        'Follow a structured process involving: Technical proposal, Prototype development, Demonstration, Technical documentation, Hardware demonstration, and Safety and emergency protocol validation.'
+      ],
+      proceedings: [
+        'ANAV was the aerial vehicle developed by Team Antariksh for the challenge. The system combined a flight controller, onboard computing, sensors, propulsion hardware and wireless telemetry to support autonomous flight and real-time monitoring.',
+        'Hardware Architecture: The ANAV system included a Pixhawk 2.4.8 Flight Controller, Raspberry Pi 5 with 8 GB RAM (onboard processing unit), IMU for orientation, TF Luna LiDAR for altitude, cameras for terrain capture, 4 × A2212 BLDC motors, 1045 propellers, Electronic Speed Controllers (ESCs), 3S 3300 mAh LiPo battery, and Wi-Fi-based MQTT telemetry.',
+        'Software Architecture: The onboard computing system used Raspberry Pi OS with Python and C++. The software stack included DroneKit, MAVLink, MAVProxy, and Paho MQTT. A multithreaded architecture supported real-time sensor processing and decision-making. PID control loops were used for orientation and altitude control. The system included emergency routines to respond to communication and sensor failures.'
+      ],
+      testingProgram: [
+        '1. BOOT & INITIALIZATION: The system performed sensor calibration and safety checks before flight.',
+        '2. TAKE-OFF: The vehicle performed a controlled thrust increase while using IMU and LiDAR feedback.',
+        '3. HOVER: ANAV successfully maintained a stable flight at an altitude of 5 metres for 46 seconds while streaming live telemetry.',
+        '4. LANDING: The vehicle performed a controlled descent using LiDAR and IMU data, followed by automatic disarming after ground contact.',
+        '5. FAIL-SAFE OPERATION: The system incorporated multiple safety mechanisms including automatic landing after 5 seconds of communication loss, sensor-failure fallback with safe landing, and manual override through RC mode.'
+      ],
+      achievement: {
+        highlight: 'Top 177 Teams Nationally',
+        details: 'Team Antariksh was selected among the top 177 teams in Round I from more than 1,600 national entries. The first-year student team independently developed and integrated the UAV hardware and software architecture, successfully demonstrating take-off, stable hovering, live telemetry streaming, and controlled landing.'
+      },
+      learningOutcomes: [
+        'Practical exposure to aerospace engineering, UAV design, embedded systems, flight control, and sensor integration.',
+        'Experience in telemetry, autonomous robotics, and team-based engineering development.',
+        'Strengthened understanding of autonomous systems, drone design, embedded programming and space technology.'
+      ],
+      conclusion: 'Although Team Antariksh did not progress beyond Phase II, the project was recognized for innovation, documentation and teamwork at the national level. The ANAV project became an important hands-on learning experience for the team and encouraged further exploration of aerospace robotics, autonomous systems and space technology.'
+    }
+  }
 ];

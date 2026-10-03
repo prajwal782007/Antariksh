@@ -1,0 +1,109 @@
+CUBESAT-ENABLED DISASTER EARLY WARNING & TELEMETRY NETWORK
+
+## PROJECT OVERVIEW
+
+The CubeSat-Enabled Disaster Early Warning & Telemetry Network is a distributed monitoring system designed to collect environmental and disaster-related data from rural and urban sensor stations and relay telemetry through a CubeSat-based communication architecture.
+
+The system is designed to provide an alternative communication pathway when conventional terrestrial networks become unavailable or unreliable during disasters such as floods, earthquakes, and landslides.
+
+## SYSTEM ARCHITECTURE
+
+The system consists of three major components:
+
+1. Rural Disaster Monitoring Station
+2. Urban Telemetry Station
+3. CubeSat Flight Hub and Ground Control Dashboard
+
+## RURAL MONITORING STATION
+
+The rural station monitors:
+
+* Water levels in dams, reservoirs and drainage systems
+* Seismic and vibration activity
+* Soil moisture
+* Temperature
+* Humidity
+
+Local processing can identify significant changes in sensor readings and generate telemetry alerts.
+
+## URBAN TELEMETRY STATION
+
+The urban station monitors:
+
+* Air quality
+* Selected gas concentrations
+* Temperature
+* Humidity
+* Local microclimate conditions
+
+The collected data can be analyzed locally before being transmitted through the telemetry network.
+
+## CUBESAT FLIGHT HUB
+
+The CubeSat acts as the central telemetry and data-processing platform.
+
+Its proposed functions include:
+
+* Receiving and processing telemetry
+* Monitoring spacecraft sensors
+* Recording mission data
+* Maintaining timestamps
+* Managing communication
+* Providing spacecraft status information
+
+The flight sensor suite may include an IMU, accelerometer, gyroscope, temperature sensor, pressure sensor, ambient-light sensor and GNSS/GPS receiver.
+
+## DATA LOGGING
+
+An onboard non-volatile storage system can record telemetry data including:
+
+* Timestamp
+* Station ID
+* Sensor measurements
+* Spacecraft position
+* Spacecraft status
+* Alert information
+
+This provides local data buffering when communication is temporarily unavailable.
+
+## COMMUNICATION
+
+The current prototype uses 2.4 GHz wireless communication for local testing, telemetry transfer and dashboard development.
+
+Future versions are planned to investigate sub-GHz LoRa communication for longer-range, low-power terrestrial telemetry.
+
+The final communication range will depend on antenna design, transmit power, terrain and other RF conditions.
+
+## TELEMETRY SECURITY
+
+Future communication systems can incorporate authenticated encryption, such as AES-GCM, together with secure key management and replay protection to protect telemetry against unauthorized access and manipulation.
+
+## GROUND CONTROL DASHBOARD
+
+The Observatory Dashboard provides a centralized interface for monitoring:
+
+* Rural sensor data
+* Urban sensor data
+* Satellite telemetry
+* Alerts
+* Environmental measurements
+* Spacecraft status
+* Historical data
+
+## FUTURE DEVELOPMENT
+
+The project roadmap includes a transition from modular commercial hardware toward compact, integrated spacecraft electronics.
+
+Future development may include:
+
+* Custom PCBs
+* Rigid-flex and high-density interconnects
+* Reduced wiring and connectors
+* Radiation-tolerant processors or FPGAs
+* Hardware-accelerated processing
+* Custom ASIC/SoC architectures
+* Flight-oriented hardware qualification
+
+## PROJECT OBJECTIVE
+
+The objective of the project is to demonstrate how distributed environmental sensors, edge processing, wireless telemetry and CubeSat-based communication can be combined to support disaster monitoring and early-warning applications.

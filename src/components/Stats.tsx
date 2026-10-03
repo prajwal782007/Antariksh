@@ -4,9 +4,9 @@ import { stats } from '@/data/stats';
 
 export default function Stats() {
   return (
-    <section className="py-12 border-y border-white/5 bg-white/[0.02]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <section className="px-3 sm:px-6 py-4 bg-black">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.id}
@@ -14,12 +14,18 @@ export default function Stats() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="p-4"
+              className="bg-[#111116] border border-white/10 hover:border-[#FF5500] transition-colors p-6 sm:p-8 rounded-[28px] sm:rounded-[36px] flex flex-col justify-between group"
             >
-              <div className="text-4xl md:text-5xl font-heading font-bold text-white mb-2">
+              <span className="font-mono text-[11px] text-[#FF5500] uppercase tracking-widest font-bold mb-3">
+                METRIC // 0{index + 1}
+              </span>
+              <div
+                className="text-5xl sm:text-6xl md:text-7xl font-display font-black text-white group-hover:text-[#FF5500] transition-colors mb-2 tracking-tight"
+                style={{ fontFamily: 'var(--font-anton), Impact, sans-serif' }}
+              >
                 {stat.value}{stat.suffix}
               </div>
-              <div className="text-sm text-accent uppercase tracking-widest font-semibold">
+              <div className="text-xs sm:text-sm font-mono text-white/70 uppercase tracking-wider font-semibold">
                 {stat.label}
               </div>
             </motion.div>

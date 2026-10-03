@@ -27,16 +27,26 @@ export default function Projects() {
   }, [selectedProject]);
 
   return (
-    <section id="projects" className="py-24 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-white uppercase tracking-wider mb-4">
-            Active Projects
-          </h2>
-          <div className="h-1 w-20 bg-accent rounded"></div>
+    <section id="projects" className="px-3 sm:px-6 py-10 bg-black">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 sm:mb-12 border-b-2 border-white/15 pb-6">
+          <div>
+            <span className="font-mono text-xs uppercase tracking-widest text-[#FF5500] font-bold block mb-2">
+              HARDWARE & RESEARCH INITIATIVES
+            </span>
+            <h2
+              className="text-4xl sm:text-6xl md:text-7xl font-display font-black text-white uppercase tracking-tight"
+              style={{ fontFamily: 'var(--font-anton), Impact, sans-serif' }}
+            >
+              ACTIVE PROJECTS
+            </h2>
+          </div>
+          <p className="font-mono text-xs sm:text-sm text-white/70 max-w-md mt-4 sm:mt-0 font-medium">
+            Proprietary payloads, sounding rockets, and communication arrays built by DPES engineers.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -45,9 +55,9 @@ export default function Projects() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               onClick={() => setSelectedProject(project)}
-              className="group relative bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:border-accent/60 transition-all duration-300 cursor-pointer hover:shadow-2xl hover:shadow-accent/10 hover:-translate-y-1"
+              className="group relative bg-[#111116] border border-white/15 rounded-[32px] overflow-hidden hover:border-[#FF5500] transition-all duration-300 cursor-pointer hover:shadow-2xl hover:shadow-[#FF5500]/10 hover:-translate-y-1.5"
             >
-              <div className="aspect-video relative overflow-hidden">
+              <div className="aspect-video relative overflow-hidden m-3 rounded-[24px]">
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -55,26 +65,29 @@ export default function Projects() {
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                   unoptimized
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent opacity-85" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
                 
-                <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-semibold tracking-wider uppercase text-white/80 border border-white/10">
-                  Click to inspect ↗
+                <div className="absolute top-3 right-3 bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-mono font-bold tracking-wider uppercase text-[#FF5500] border border-[#FF5500]/30">
+                  INSPECT ↗
                 </div>
               </div>
               
-              <div className="p-6 relative">
+              <div className="p-6 pt-2 relative">
                 <div className="flex justify-between items-center mb-3">
-                  <span className="text-xs font-semibold text-accent uppercase tracking-wider bg-accent/10 px-2.5 py-1 rounded-full border border-accent/20">
+                  <span className="text-xs font-mono font-bold text-[#FF5500] uppercase tracking-wider bg-[#FF5500]/10 px-3 py-1 rounded-full border border-[#FF5500]/25">
                     {project.domain}
                   </span>
-                  <span className="text-xs text-muted-foreground uppercase font-medium">
+                  <span className="text-xs font-mono text-white/70 uppercase font-semibold">
                     {project.status}
                   </span>
                 </div>
-                <h3 className="text-xl font-heading font-bold text-white mb-2 group-hover:text-accent transition-colors">
+                <h3
+                  className="text-2xl font-display font-extrabold text-white mb-2 group-hover:text-[#FF5500] transition-colors uppercase tracking-tight"
+                  style={{ fontFamily: 'var(--font-anton), Impact, sans-serif' }}
+                >
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground text-sm line-clamp-2 leading-relaxed">
+                <p className="text-white/70 text-sm line-clamp-2 leading-relaxed font-medium">
                   {project.description}
                 </p>
               </div>

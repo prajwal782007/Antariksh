@@ -1,0 +1,134 @@
+# AgYanis – Autonomous Lunar Surface 3D-Mapping Rover
+
+**Project Type:** Space Robotics / Autonomous Rover
+**Event:** National Space Innovation Challenge (NSIC) 2026
+**Event Date:** 22 August 2026
+**Venue:** MIT World Peace University, Pune
+**Organized Under:** Space-Axpo 2026 by AXSX – Aeronautics & Space Exploration
+**Club:** Antariksh Club, Dhole Patil College of Engineering
+**Team:** AgYanis
+**Achievement:** Top 5 Projects at NSIC 2026
+
+## About the Project
+
+The AgYanis team from the Antariksh Club developed an Autonomous Lunar Surface 3D-Mapping Rover for exploring and analysing a simulated lunar surface containing craters, uneven terrain, and obstacles.
+
+The project was developed as part of the National Space Innovation Challenge (NSIC) 2026 and provided students with practical experience in space exploration, robotics, autonomous systems, computer vision, and planetary terrain analysis.
+
+The rover integrates stereo vision, LiDAR, autonomous navigation, and hazard detection to analyse its surroundings and navigate through simulated lunar terrain.
+
+## Key Features
+
+The AgYanis rover uses:
+
+* Raspberry Pi 5 as the main computing platform.
+* Two Raspberry Pi Camera Module 3 cameras for stereo vision.
+* TF-Luna 1D LiDAR for distance calibration and safety detection.
+* Encoder-based four-wheel-drive system for movement and odometry.
+* DHT11 sensor for temperature and humidity monitoring.
+* LED lighting for darker portions of the simulated terrain.
+* Python and C++ for control, vision, and mapping software.
+
+## Stereo-Based 3D Mapping
+
+The rover uses two cameras positioned to capture the same terrain from slightly different viewpoints.
+
+The difference between the two images is processed to estimate depth. The generated depth information is then converted into a 3D representation of the terrain.
+
+This allows the rover to analyse surface variations and identify possible hazards.
+
+The TF-Luna LiDAR provides an independent distance measurement that can be used for calibration and additional safety monitoring.
+
+## Operating Modes
+
+### Manual Mode
+
+In Manual Mode, the operator controls the rover while the system continuously provides sensor information and hazard warnings through the dashboard.
+
+### Autonomous Mode
+
+In Autonomous Mode, the rover analyses the generated depth information, identifies hazardous regions, and attempts to navigate through safer portions of the simulated lunar terrain.
+
+The combination of stereo vision, LiDAR, autonomous navigation, and real-time monitoring demonstrates the integration of multiple engineering disciplines into a single working prototype.
+
+## Technology Stack
+
+**Computing Platform:** Raspberry Pi 5
+
+**Vision:** 2 × Raspberry Pi Camera Module 3
+
+**Distance & Safety:** TF-Luna 1D LiDAR
+
+**Mobility:** Encoder-based Four-Wheel Drive
+
+**Environmental Monitoring:** DHT11
+
+**Programming:** Python and C++
+
+**Additional System:** LED Lighting and Dashboard Monitoring
+
+## Team Members
+
+The AgYanis Hardware Project Team consisted of:
+
+1. Swanand Dindore
+2. Dnyaneshwari Avhad
+3. Purva Rajput
+4. Prajwal Valekar
+5. Yogesh Mali
+
+All team members were second-year students representing the Antariksh Club of Dhole Patil College of Engineering.
+
+## Achievement
+
+The AgYanis Hardware Team successfully secured a position among the **Top 5 Projects at the National Space Innovation Challenge (NSIC) 2026**.
+
+This achievement marked an important milestone for the Antariksh Club and demonstrated the team’s practical capabilities in robotics, computer vision, autonomous navigation, and space-technology development.
+
+## Interdisciplinary Collaboration
+
+The physical development of the AgYanis rover involved collaboration with the **DPCOE Graphics Design Club**.
+
+The Graphics Design Club provided technical assistance in **3D printing the complete rover chassis**, helping the hardware team manufacture and assemble the physical rover prototype within the available development period.
+
+This collaboration demonstrated how expertise from different student clubs can contribute to an interdisciplinary engineering project.
+
+## Expert Feedback
+
+During the NSIC 2026 evaluation process, the team received valuable guidance from a former ISRO scientist.
+
+The expert appreciated the interdisciplinary approach of the project and encouraged the students to develop the work further as research.
+
+The stereo-vision approach was identified as an interesting area for further study because two viewpoints are used to estimate depth, similar to how information from different viewpoints contributes to depth perception.
+
+The rover’s hazard-response system was also identified as an area with potential for further research.
+
+## Future Scope
+
+The AgYanis rover can be further improved through:
+
+* Better stereo calibration.
+* LiDAR-camera fusion.
+* Terrain classification.
+* Improved hazard detection.
+* Autonomous path planning.
+* More accurate 3D mapping.
+
+The Antariksh Club also plans to pursue research based on the project, with the proposed topic:
+
+**“Stereo-based 3D planetary perception and hazard-aware autonomous navigation.”**
+
+## Project Highlights
+
+**Project:** Autonomous Lunar Surface 3D-Mapping Rover
+**Team:** AgYanis
+**Domain:** Space Robotics & Autonomous Systems
+**Platform:** Raspberry Pi 5
+**Vision:** Stereo Camera System
+**Distance Sensor:** TF-Luna 1D LiDAR
+**Drive:** Encoder-based Four-Wheel Drive
+**Software:** Python & C++
+**Terrain:** Simulated Lunar Surface
+**Event:** NSIC 2026
+**Achievement:** Top 5 Projects
+**Future Focus:** 3D Planetary Perception & Hazard-Aware Autonomous Navigation

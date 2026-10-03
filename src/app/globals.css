@@ -1,32 +1,55 @@
 @import "tailwindcss";
 
 :root {
-  --background: #05050A; /* Deep space black */
-  --foreground: #F8FAFC; /* Crisp white/slate */
-  --accent: #E32626; /* Rocket Red from logo */
+  --background: #08080A; /* Deep space black */
+  --foreground: #F8FAFC; /* Clean white */
+  --accent: #FF5500; /* High-intensity Safety Orange inspired by reference */
+  --accent-light: #FF7726;
+  --accent-dark: #CC4400;
   
-  --muted: #1E293B; /* Slate 800 */
-  --muted-foreground: #94A3B8; /* Slate 400 */
+  --muted: #1A1A1E;
+  --muted-foreground: #9E9EA8;
   
-  --border: rgba(255, 255, 255, 0.1);
+  --border: rgba(255, 255, 255, 0.12);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-accent-dark: var(--accent-dark);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
   
   --font-sans: var(--font-inter);
   --font-heading: var(--font-space-grotesk);
+  --font-display: var(--font-bebas);
+  --font-accent: var(--font-syne);
+  --font-marvel: var(--font-bebas);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Marvel-style cinematic tall typography utility */
+.font-marvel {
+  font-family: var(--font-bebas), sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.font-display {
+  font-family: var(--font-bebas), sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.font-accent {
+  font-family: var(--font-syne), sans-serif;
 }
 
 /* Scrollbar styling for mission control feel */
@@ -34,12 +57,12 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--background);
+  background: #000000;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--muted);
+  background: #FF5500;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent);
+  background: #FF7726;
 }
