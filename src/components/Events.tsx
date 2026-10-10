@@ -9,7 +9,7 @@ export default function Events() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 sm:mb-12 border-b-2 border-white/15 pb-6">
           <div>
-            <span className="font-mono text-xs uppercase tracking-widest text-[#FF5500] font-bold block mb-2">
+            <span className="font-mono text-xs uppercase tracking-widest text-[#FFFFFF] font-bold block mb-2">
               SCHEDULE & OPERATIONS
             </span>
             <h2
@@ -32,9 +32,9 @@ export default function Events() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="flex flex-col sm:flex-row bg-[#111116] border border-white/15 rounded-[32px] overflow-hidden group hover:border-[#FF5500] transition-colors"
+              className="flex flex-col sm:flex-row bg-[#111116] border border-white/15 rounded-[32px] overflow-hidden group hover:border-[#FFFFFF] transition-colors"
             >
-              <div className="bg-[#FF5500] text-black p-6 sm:p-8 flex flex-col justify-center items-center sm:w-36 border-b sm:border-b-0 sm:border-r-2 border-black">
+              <div className="bg-[#FFFFFF] text-black p-6 sm:p-8 flex flex-col justify-center items-center sm:w-36 border-b sm:border-b-0 sm:border-r-2 border-black">
                 <span
                   className="text-4xl sm:text-5xl font-display font-black leading-none"
                   style={{ fontFamily: 'var(--font-anton), Impact, sans-serif' }}
@@ -47,20 +47,20 @@ export default function Events() {
               </div>
               <div className="p-6 sm:p-8 flex-1">
                 <h3
-                  className="text-2xl font-display font-black text-white mb-2 group-hover:text-[#FF5500] transition-colors uppercase tracking-tight"
+                  className="text-2xl font-display font-black text-white mb-2 group-hover:text-[#FFFFFF] transition-colors uppercase tracking-tight"
                   style={{ fontFamily: 'var(--font-anton), Impact, sans-serif' }}
                 >
                   {event.title}
                 </h3>
                 <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-white/70 mb-4 font-medium">
-                  <span className="flex items-center gap-1.5"><CalendarDays size={14} className="text-[#FF5500]" /> {event.date}</span>
-                  <span className="flex items-center gap-1.5"><MapPin size={14} className="text-[#FF5500]" /> {event.location}</span>
+                  <span className="flex items-center gap-1.5"><CalendarDays size={14} className="text-[#FFFFFF]" /> {event.date}</span>
+                  <span className="flex items-center gap-1.5"><MapPin size={14} className="text-[#FFFFFF]" /> {event.location}</span>
                 </div>
                 <p className="text-white/70 text-sm leading-relaxed font-medium mb-4">
                   {event.description}
                 </p>
                 <div className="flex justify-end">
-                  <span className="font-mono text-xs font-bold text-[#FF5500] uppercase tracking-wider group-hover:underline">
+                  <span className="font-mono text-xs font-bold text-[#FFFFFF] uppercase tracking-wider group-hover:underline">
                     RSVP DETAILS ↗
                   </span>
                 </div>

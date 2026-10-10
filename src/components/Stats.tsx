@@ -14,13 +14,13 @@ export default function Stats() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="bg-[#111116] border border-white/10 hover:border-[#FF5500] transition-colors p-6 sm:p-8 rounded-[28px] sm:rounded-[36px] flex flex-col justify-between group"
+              className="bg-[#111116] border border-white/10 hover:border-[#FFFFFF] transition-colors p-6 sm:p-8 rounded-[28px] sm:rounded-[36px] flex flex-col justify-between group"
             >
-              <span className="font-mono text-[11px] text-[#FF5500] uppercase tracking-widest font-bold mb-3">
+              <span className="font-mono text-[11px] text-[#FFFFFF] uppercase tracking-widest font-bold mb-3">
                 METRIC // 0{index + 1}
               </span>
               <div
-                className="text-5xl sm:text-6xl md:text-7xl font-display font-black text-white group-hover:text-[#FF5500] transition-colors mb-2 tracking-tight"
+                className="text-5xl sm:text-6xl md:text-7xl font-display font-black text-white group-hover:text-[#FFFFFF] transition-colors mb-2 tracking-tight"
                 style={{ fontFamily: 'var(--font-anton), Impact, sans-serif' }}
               >
                 {stat.value}{stat.suffix}

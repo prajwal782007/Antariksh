@@ -65,7 +65,7 @@ export default function StarShower() {
         angle: Math.PI / 4 + (Math.random() * 0.2 - 0.1), // ~45 deg diagonal
         opacity: 1,
         thickness: Math.random() * 2 + 1,
-        color: isOrange ? '#FF5500' : '#FFFFFF',
+        color: isOrange ? '#FFFFFF' : '#FFFFFF',
         active: true,
       });
     };
@@ -85,7 +85,7 @@ export default function StarShower() {
         ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
         ctx.fillStyle = `rgba(255, 255, 255, ${Math.max(0.1, Math.min(1, star.alpha))})`;
         ctx.shadowBlur = 4;
-        ctx.shadowColor = '#FF5500';
+        ctx.shadowColor = '#FFFFFF';
         ctx.fill();
       }
 
@@ -107,7 +107,7 @@ export default function StarShower() {
 
         const gradient = ctx.createLinearGradient(star.x, star.y, tailX, tailY);
         gradient.addColorStop(0, star.color);
-        gradient.addColorStop(0.3, star.color === '#FF5500' ? 'rgba(255, 119, 38, 0.8)' : 'rgba(255, 255, 255, 0.8)');
+        gradient.addColorStop(0.3, star.color === '#FFFFFF' ? 'rgba(255, 119, 38, 0.8)' : 'rgba(255, 255, 255, 0.8)');
         gradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
 
         ctx.save();

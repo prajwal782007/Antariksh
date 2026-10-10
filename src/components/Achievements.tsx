@@ -8,7 +8,7 @@ export default function Achievements() {
     <section id="achievements" className="px-3 sm:px-6 py-10 bg-black">
       <div className="max-w-7xl mx-auto">
         {/* Curvy Orange Showcase Container */}
-        <div className="bg-[#FF5500] text-black rounded-[36px] sm:rounded-[52px] p-6 sm:p-12 md:p-16 border-4 border-black shadow-2xl">
+        <div className="bg-[#FFFFFF] text-black rounded-[36px] sm:rounded-[52px] p-6 sm:p-12 md:p-16 border-4 border-black shadow-2xl">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-10 pb-6 border-b-2 border-black/20">
             <div>
               <span className="font-mono text-xs uppercase tracking-widest text-black font-black block mb-2">
@@ -38,10 +38,10 @@ export default function Achievements() {
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="font-mono text-xs font-black text-[#FF5500] uppercase tracking-wider bg-[#FF5500]/15 px-3 py-1 rounded-full border border-[#FF5500]/30">
+                    <span className="font-mono text-xs font-black text-[#FFFFFF] uppercase tracking-wider bg-[#FFFFFF]/15 px-3 py-1 rounded-full border border-[#FFFFFF]/30">
                       {achievement.date}
                     </span>
-                    <Trophy size={20} className="text-[#FF5500]" />
+                    <Trophy size={20} className="text-[#FFFFFF]" />
                   </div>
                   <h3
                     className="text-2xl font-display font-black text-white mb-3 uppercase tracking-tight"
@@ -55,7 +55,7 @@ export default function Achievements() {
                 </div>
                 <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-[11px] font-mono font-bold text-white/50 uppercase">
                   <span>AWARD VERIFIED</span>
-                  <span className="text-[#FF5500]">0{index + 1} // 03</span>
+                  <span className="text-[#FFFFFF]">0{index + 1} // 03</span>
                 </div>
               </motion.div>
             ))}

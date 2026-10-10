@@ -10,7 +10,7 @@ export default function Missions() {
         {/* Section Header with Industrial Typography */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 sm:mb-12 border-b-2 border-white/15 pb-6">
           <div>
-            <span className="font-mono text-xs uppercase tracking-widest text-[#FF5500] font-bold block mb-2">
+            <span className="font-mono text-xs uppercase tracking-widest text-[#FFFFFF] font-bold block mb-2">
               TELEMETRY & TIMELINES
             </span>
             <h2
@@ -35,8 +35,8 @@ export default function Missions() {
               transition={{ delay: index * 0.1, duration: 0.5 }}
               className={`p-6 sm:p-10 rounded-[32px] sm:rounded-[44px] border-2 transition-all group relative overflow-hidden ${
                 index % 2 === 0
-                  ? 'bg-[#111116] border-white/15 hover:border-[#FF5500]'
-                  : 'bg-[#FF5500] text-black border-black'
+                  ? 'bg-[#111116] border-white/15 hover:border-[#FFFFFF]'
+                  : 'bg-[#FFFFFF] text-black border-black'
               }`}
             >
               <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
@@ -45,15 +45,15 @@ export default function Missions() {
                     <span
                       className={`px-3 py-1 text-xs font-mono font-black uppercase rounded-full ${
                         index % 2 === 0
-                          ? 'bg-[#FF5500] text-black'
-                          : 'bg-black text-[#FF5500]'
+                          ? 'bg-[#FFFFFF] text-black'
+                          : 'bg-black text-[#FFFFFF]'
                       }`}
                     >
                       MISSION // 0{index + 1}
                     </span>
                     <span
                       className={`text-xs font-mono font-bold uppercase tracking-wider ${
-                        index % 2 === 0 ? 'text-[#FF5500]' : 'text-black/80'
+                        index % 2 === 0 ? 'text-[#FFFFFF]' : 'text-black/80'
                       }`}
                     >
                       ACTIVE TELEMETRY
@@ -83,11 +83,11 @@ export default function Missions() {
                     }`}
                   >
                     <span className="flex items-center gap-1.5">
-                      <Calendar size={14} className={index % 2 === 0 ? 'text-[#FF5500]' : 'text-black'} />
+                      <Calendar size={14} className={index % 2 === 0 ? 'text-[#FFFFFF]' : 'text-black'} />
                       LAUNCH: {mission.launchDate}
                     </span>
                     <span className="flex items-center gap-1.5">
-                      <Target size={14} className={index % 2 === 0 ? 'text-[#FF5500]' : 'text-black'} />
+                      <Target size={14} className={index % 2 === 0 ? 'text-[#FFFFFF]' : 'text-black'} />
                       PAYLOAD VERIFIED
                     </span>
                   </div>
@@ -115,7 +115,7 @@ export default function Missions() {
                       viewport={{ once: true }}
                       transition={{ duration: 1.5, ease: 'easeOut', delay: 0.2 }}
                       className={`h-full rounded-full ${
-                        index % 2 === 0 ? 'bg-[#FF5500]' : 'bg-black'
+                        index % 2 === 0 ? 'bg-[#FFFFFF]' : 'bg-black'
                       }`}
                     />
                   </div>

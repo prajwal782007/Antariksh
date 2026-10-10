@@ -9,7 +9,7 @@ export default function Domains() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 sm:mb-12 border-b-2 border-white/15 pb-6">
           <div>
-            <span className="font-mono text-xs uppercase tracking-widest text-[#FF5500] font-bold block mb-2">
+            <span className="font-mono text-xs uppercase tracking-widest text-[#FFFFFF] font-bold block mb-2">
               SPECIALIZED DIVISIONS
             </span>
             <h2
@@ -35,13 +35,13 @@ export default function Domains() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.4 }}
-                className="bg-[#111116] border border-white/15 p-8 rounded-[32px] text-left group hover:border-[#FF5500] transition-all hover:-translate-y-2 flex flex-col justify-between"
+                className="bg-[#111116] border border-white/15 p-8 rounded-[32px] text-left group hover:border-[#FFFFFF] transition-all hover:-translate-y-2 flex flex-col justify-between"
               >
                 <div>
-                  <div className="w-14 h-14 bg-black border-2 border-white/15 rounded-2xl flex items-center justify-center mb-6 group-hover:border-[#FF5500] group-hover:bg-[#FF5500] text-[#FF5500] group-hover:text-black transition-all">
+                  <div className="w-14 h-14 bg-black border-2 border-white/15 rounded-2xl flex items-center justify-center mb-6 group-hover:border-[#FFFFFF] group-hover:bg-[#FFFFFF] text-[#FFFFFF] group-hover:text-black transition-all">
                     <Icon size={28} />
                   </div>
-                  <span className="font-mono text-[11px] text-[#FF5500] uppercase font-bold tracking-widest block mb-1">
+                  <span className="font-mono text-[11px] text-[#FFFFFF] uppercase font-bold tracking-widest block mb-1">
                     DIVISION // 0{index + 1}
                   </span>
                   <h3
@@ -56,7 +56,7 @@ export default function Domains() {
                 </div>
                 <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono font-bold text-white/40">
                   <span>SUBSYSTEM</span>
-                  <span className="text-[#FF5500] group-hover:translate-x-1 transition-transform">→</span>
+                  <span className="text-[#FFFFFF] group-hover:translate-x-1 transition-transform">→</span>
                 </div>
               </motion.div>
             );

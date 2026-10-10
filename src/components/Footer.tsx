@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-8 border-b border-white/10">
           <div className="md:col-span-5">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full bg-[#FF5500] text-black font-display font-black text-xl flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-[#FFFFFF] text-black font-display font-black text-xl flex items-center justify-center">
                 A
               </div>
               <span
@@ -23,29 +23,29 @@ export default function Footer() {
           </div>
           
           <div className="md:col-span-3">
-            <h3 className="font-mono font-bold text-xs text-[#FF5500] uppercase tracking-widest mb-4">
+            <h3 className="font-mono font-bold text-xs text-[#FFFFFF] uppercase tracking-widest mb-4">
               QUICK ACCESS
             </h3>
             <ul className="space-y-2.5 text-sm font-mono font-semibold">
-              <li><Link href="#missions" className="text-white/70 hover:text-[#FF5500] transition-colors">01 // MISSIONS</Link></li>
-              <li><Link href="#projects" className="text-white/70 hover:text-[#FF5500] transition-colors">02 // PROJECTS</Link></li>
-              <li><Link href="#achievements" className="text-white/70 hover:text-[#FF5500] transition-colors">03 // HALL OF FAME</Link></li>
-              <li><Link href="#events" className="text-white/70 hover:text-[#FF5500] transition-colors">04 // EVENTS</Link></li>
-              <li><Link href="#domains" className="text-white/70 hover:text-[#FF5500] transition-colors">05 // DOMAINS</Link></li>
+              <li><Link href="#missions" className="text-white/70 hover:text-[#FFFFFF] transition-colors">01 // MISSIONS</Link></li>
+              <li><Link href="#projects" className="text-white/70 hover:text-[#FFFFFF] transition-colors">02 // PROJECTS</Link></li>
+              <li><Link href="#achievements" className="text-white/70 hover:text-[#FFFFFF] transition-colors">03 // HALL OF FAME</Link></li>
+              <li><Link href="#events" className="text-white/70 hover:text-[#FFFFFF] transition-colors">04 // EVENTS</Link></li>
+              <li><Link href="#domains" className="text-white/70 hover:text-[#FFFFFF] transition-colors">05 // DOMAINS</Link></li>
             </ul>
           </div>
 
           <div className="md:col-span-4">
-            <h3 className="font-mono font-bold text-xs text-[#FF5500] uppercase tracking-widest mb-4">
+            <h3 className="font-mono font-bold text-xs text-[#FFFFFF] uppercase tracking-widest mb-4">
               HEADQUARTERS
             </h3>
             <p className="text-sm font-mono text-white/70 leading-relaxed mb-4">
               Antariksh Mission Control, Dhole Patil College of Engineering, 1284 Near Kharadi IT Park, Wagholi, Pune, Maharashtra 412207
             </p>
             <div className="flex space-x-3">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-xs font-mono font-bold text-white hover:bg-[#FF5500] hover:text-black hover:border-[#FF5500] transition-colors">IG</a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-xs font-mono font-bold text-white hover:bg-[#FF5500] hover:text-black hover:border-[#FF5500] transition-colors">LI</a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-xs font-mono font-bold text-white hover:bg-[#FF5500] hover:text-black hover:border-[#FF5500] transition-colors">X</a>
+              <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-xs font-mono font-bold text-white hover:bg-[#FFFFFF] hover:text-black hover:border-[#FFFFFF] transition-colors">IG</a>
+              <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-xs font-mono font-bold text-white hover:bg-[#FFFFFF] hover:text-black hover:border-[#FFFFFF] transition-colors">LI</a>
+              <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-xs font-mono font-bold text-white hover:bg-[#FFFFFF] hover:text-black hover:border-[#FFFFFF] transition-colors">X</a>
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} ANTARIKSH DPES CLUB. ALL SYSTEMS NOMINAL.
           </p>
           <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-[#FF5500] animate-pulse" />
+            <span className="w-2 h-2 rounded-full bg-[#FFFFFF] animate-pulse" />
             <span className="text-white/80">COMMUNICATION LINK ACTIVE</span>
           </div>
         </div>

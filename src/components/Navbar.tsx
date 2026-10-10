@@ -43,9 +43,9 @@ export default function Navbar() {
                 alt="Antariksh Logo" 
                 width={36} 
                 height={36} 
-                className="w-9 h-9 rounded-full object-cover border-2 border-[#FF5500] group-hover:scale-105 transition-transform" 
+                className="w-9 h-9 rounded-full object-cover border-2 border-white/40 group-hover:scale-105 transition-transform" 
               />
-              <span className="font-display text-xl sm:text-2xl tracking-wider uppercase text-white group-hover:text-[#FF5500] transition-colors">
+              <span className="font-display text-xl sm:text-2xl tracking-wider uppercase text-white transition-colors">
                 ANTARIKSH
               </span>
             </Link>
@@ -57,15 +57,15 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-xs font-mono font-bold text-white/80 hover:text-[#FF5500] transition-colors uppercase tracking-widest relative group py-1"
+                className="text-xs font-mono font-bold text-white/70 hover:text-white transition-colors uppercase tracking-widest relative group py-1"
               >
                 {link.name}
-                <span className="absolute -bottom-0.5 left-0 w-0 h-[2px] bg-[#FF5500] transition-all group-hover:w-full"></span>
+                <span className="absolute -bottom-0.5 left-0 w-0 h-[2px] bg-white transition-all group-hover:w-full"></span>
               </Link>
             ))}
             <Link
               href="#projects"
-              className="px-4 py-1.5 bg-[#FF5500] text-black font-mono font-black text-xs uppercase tracking-wider rounded-full hover:bg-white transition-colors"
+              className="px-4 py-1.5 border border-white/30 text-white font-mono font-black text-xs uppercase tracking-wider rounded-full hover:bg-white hover:text-black transition-colors"
             >
               Explore ↗
             </Link>
@@ -75,7 +75,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-[#FF5500] focus:outline-none"
+              className="text-white hover:text-white/70 focus:outline-none"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -95,7 +95,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="block px-4 py-2.5 rounded-xl text-xs font-mono font-bold text-white hover:bg-[#FF5500] hover:text-black uppercase tracking-wider transition-colors"
+                className="block px-4 py-2.5 rounded-xl text-xs font-mono font-bold text-white hover:bg-white/10 uppercase tracking-wider transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}

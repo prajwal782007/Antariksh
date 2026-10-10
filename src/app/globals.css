@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #08080A; /* Deep space black */
-  --foreground: #F8FAFC; /* Clean white */
-  --accent: #FF5500; /* High-intensity Safety Orange inspired by reference */
-  --accent-light: #FF7726;
-  --accent-dark: #CC4400;
+  --background: #000000; /* Deep space pitch black */
+  --foreground: #FFFFFF; /* Stark white */
+  --accent: #FFFFFF; /* White for accents */
+  --accent-light: #F3F4F6;
+  --accent-dark: #9CA3AF;
   
-  --muted: #1A1A1E;
-  --muted-foreground: #9E9EA8;
+  --muted: #111111;
+  --muted-foreground: #A1A1AA;
   
-  --border: rgba(255, 255, 255, 0.12);
+  --border: rgba(255, 255, 255, 0.15);
 }
 
 @theme inline {
@@ -60,9 +60,9 @@ body {
   background: #000000;
 }
 ::-webkit-scrollbar-thumb {
-  background: #FF5500;
+  background: #FFFFFF;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #FF7726;
+  background: #CCCCCC;
 }
